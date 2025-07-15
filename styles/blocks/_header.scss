@@ -1,0 +1,65 @@
+@use '../helpers' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(79);
+    padding-inline: rem(93);
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(18);
+
+        &-link {
+            background-color: transparent;
+        }
+
+        &-img {
+            @include hover {
+                filter: drop-shadow(3px 4px 8px #1DACD6);
+                transition-duration: var(--transition-duration);
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(50);
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: rem(50);
+        }
+
+        &-button {
+            width: rem(29);
+            aspect-ratio: 1;
+            background: url('../../icons/search.svg') center/cover no-repeat;
+            border: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: rem(15);
+        width: rem(29);
+        height: rem(33);
+        background-color: transparent;
+        border: none;
+        color: var(--color-light);
+
+        @include hover {
+            background-color: var(--color-grey);
+            border-radius: rem(10);
+        }
+    }
+}

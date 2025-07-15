@@ -1,0 +1,51 @@
+@use 'helpers' as *;
+
+body {
+    @include fluid-text(18, 24);
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    letter-spacing: -0.03em;
+    color: var(--color-light);
+    background: url('../images/background.jpg');
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: var(--color-light);
+
+    @include hover {
+        color: var(--color-grey);
+    }
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: rem(120);
+}
+
+h2, h3 {
+    font-size: rem(28);
+}
+
+p {
+    line-height: 1.2;
+    font-family: var(--font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-accent);
+}
