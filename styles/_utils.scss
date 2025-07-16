@@ -9,3 +9,25 @@
 .visually-hidden {
     @include visually-hidden;
 }
+
+.is-active-button {
+    width: rem(264) !important;
+    height: rem(86) !important;
+    border-radius: rem(10) !important;
+    border: var(--border-light) !important;
+    color: var(--color-light) !important;
+    background-color: transparent !important;
+} 
+
+.is-current-card {
+    max-width: rem(331);
+    background-color: var(--color-light);
+    border-radius: rem(16);
+    z-index: 3;
+}
+
+.is-current-button {
+    width: rem(8);
+    height: rem(28);
+    border: var(--border-ligth);
+}

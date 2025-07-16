@@ -18,6 +18,7 @@
     --border-light: 1px solid var(--color-light);
     --border-grey: 1px solid var(--color-grey);
     --background-color: rgba(0, 0, 0, 0.2);
+    --filter: blur(rem(7.05));
 
     @include laptop {
         --container-width: #{rem(1280)};
