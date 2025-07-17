@@ -31,3 +31,44 @@
     height: rem(28);
     border: var(--border-ligth);
 }
+
+.is-active-card {
+    padding-block: rem(33);
+    padding-left: rem(42);
+    background-color: var(--color-light) !important;
+    color: var(--color-dark);
+    border: var(--border-grey);
+    border-radius: rem(24);
+    width: rem(690);
+    display: flex;
+    align-items: center;
+    column-gap: rem(30);
+
+    .trending__buttons-button {
+        width: rem(124);
+        height: rem(40);
+        background-color: transparent;
+        border-radius: rem(8);
+        color: var(--color-dark);
+        font-size: rem(18);
+        border: var(--border-grey);
+
+            @include hover {
+                background-color: var(--color-grey);
+            }
+        }
+
+        .trending__count-block--button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-dark);
+            height: rem(10);
+            background-color: transparent;
+            border: none;
+
+                @include hover {
+                    color: var(--color-grey);
+                }
+        }
+}

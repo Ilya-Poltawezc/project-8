@@ -1,0 +1,64 @@
+@use '../helpers' as *;
+
+.footer {
+    &__cos1als {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: rem(93);
+        padding-top: rem(61);
+        padding-bottom: rem(32);
+    }
+
+    &__block {
+        &-list {
+            display: flex;
+            column-gap: rem(45);
+        }
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-link-1 {
+            width: rem(39);
+            aspect-ratio: 1;
+            background: url('../../images/footer/google.svg');
+
+            @include hover {
+                filter: drop-shadow(3px 4px 10px var(--color-light));
+            }
+        }
+
+        &-link-2 {
+            width: rem(39);
+            aspect-ratio: 1;
+            background: url('../../images/footer/facebook.svg');
+
+            @include hover {
+                filter: drop-shadow(3px 4px 10px blue);
+            }
+        }
+
+        &-link-3 {
+            width: rem(39);
+            aspect-ratio: 1;
+            background: url('../../images/footer/twitter.svg');
+
+            @include hover {
+                filter: drop-shadow(3px 4px 10px lightblue);
+            }
+        }
+
+        &-link-4 {
+            width: rem(39);
+            aspect-ratio: 1;
+            background: url('../../images/footer/instagram.svg');
+
+            @include hover {
+                filter: drop-shadow(3px 4px 10px red);
+            }
+        }
+    }
+}
