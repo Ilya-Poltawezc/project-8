@@ -259,6 +259,7 @@ svg * {
   border: var(--border-light) !important;
   color: var(--color-light) !important;
   background-color: transparent !important;
+  pointer-events: none;
 }
 
 .is-current-card {
@@ -268,10 +269,32 @@ svg * {
   z-index: 3;
 }
 
+.card-1 {
+  width: 20.6875rem !important;
+  background-color: var(--color-light) !important;
+  border-radius: 1rem;
+  z-index: 3;
+  position: relative;
+  top: -13.125rem !important;
+  transition-duration: 0.5s;
+}
+
+.card-2 {
+  position: relative;
+  bottom: -0.6875rem;
+  width: 19.375rem !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  border-radius: 1rem;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
 .is-current-button {
   width: 0.5rem;
   height: 1.75rem;
   border: var(--border-ligth);
+  border-radius: 10px !important;
+  transition-duration: var(--transition-duration);
 }
 
 .is-active-card {
@@ -495,25 +518,17 @@ h1, h2, h3, h4, h5, h6 {
   row-gap: 0.0625rem;
 }
 .preview__person-block--card-1 {
-  max-width: 20.6875rem;
+  width: 20.6875rem;
   background-color: var(--color-light);
   border-radius: 1rem;
 }
 .preview__person-block--card-2 {
   position: relative;
   top: -12.375rem;
-  max-width: 19.375rem;
+  width: 19.375rem;
   background: rgba(255, 255, 255, 0.75);
   border-radius: 1rem;
   z-index: 2;
-}
-.preview__person-block--card-3 {
-  position: relative;
-  top: -25.9375rem;
-  max-width: 17.4375rem;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 1rem;
-  z-index: 1;
 }
 .preview__person-block--title {
   color: var(--color-dark);
@@ -623,9 +638,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.trending {
-  margin-top: -15.3125rem;
-}
 .trending__title {
   display: flex;
   justify-content: end;
